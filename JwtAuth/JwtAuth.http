@@ -1,0 +1,15 @@
+@JwtAuth_HostAddress = http://localhost:5188
+
+###
+GET {{JwtAuth_HostAddress}}/api/baja
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0IHRva2VuIiwibmFtZSI6InRlc3QiLCJqdGkiOiJkNjM2NDEwMS05Y2MxLTRlNTMtOTM5My1lZDcyYTcwNmZmYzMiLCJleHAiOjE3MTY0NDYyODQsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OCIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTE4OCJ9.5MqiriMTvD5ajYxerpLa__HFCHVjS3DrPPxL02SlerY
+
+###
+POST {{JwtAuth_HostAddress}}/api/auth
+Content-Type: application/json
+
+//Body
+{
+    "Username":"test",
+    "Password":"password"
+}
